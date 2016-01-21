@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<title> Kookboek</title>
+</head>
+
+
+
+<style type="text/css">
+    body {background-color:white;}
+
+p {color:black;}
+
+p2 {color:black;}
+
+h1 {color:black;}
+
+
+</style>
+
+
+<body>
+<h1> Kookboek</h1>
+<div id="section">
+<p2> Voer hier de informatie in:</p2>
+<p> Ingredienten: </p>
+
+
+
+<table border="1" style="width:60%">
+  <tr>
+    <td>Ingredient 1: </td>
+    <td><input type="tekst" name="name" id="i1"></td> </td>
+  </tr>
+  <tr>
+    <td>Ingredient 2: </td>
+    <td> <input type="tekst" name="name" id="i2"></td>
+  </tr>
+  <tr>
+    <td>Gebruik: </td>
+    <td><input type="tekst" name="name" id="gebruik"></td> </td>
+  </tr>
+   <tr>
+    <td>Duur: </td>
+    <td><input type="tekst" name="name" id="duur"></td> </td>
+  </tr
+  
+<button>Submit</button>
+</table>
+
+</body>
+
+
+</html>
+
+
