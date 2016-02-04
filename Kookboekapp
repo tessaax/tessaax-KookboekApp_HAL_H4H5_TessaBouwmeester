@@ -1,58 +1,55 @@
+
 <!DOCTYPE html>
 <html>
-
-
-<head>
-<title> Kookboek</title>
-</head>
-
-
-
-<style type="text/css">
-    body {background-color:white;}
-
-p {color:black;}
-
-p2 {color:black;}
-
-h1 {color:black;}
-
-
-</style>
-
-
 <body>
-<h1> Kookboek</h1>
-<div id="section">
-<p2> Voer hier de informatie in:</p2>
-<p> Ingredienten: </p>
+
+<h> Kookboek </h>
+
+<form id="form1">
+Ingredient 1: <input name="i1" type="text" size="20">
+</form>
+
+<form id="form2">
+Ingredient 2: <input name="i2" type="text" size="20">
+</form>
+
+<form id="form3">
+Duur (min)  : <input name="duur" type="text" size="20">
+</form>
+
+<form id="form4">
+Handeling  : <input name="handeling" type="text" size="20">
+</form>
+    
+<button onclick="outputname()">Submit</button>
+<script>
+
+function outputname() {
+var x,y,name,a,b,answer;
+x=document.getElementById("form1") ;
+y=x.elements["i1"].value;
+
+var q, w;
+q=document.getElementById("form2");
+w=q.elements["i2"].value;
+
+var t, s;
+t=document.getElementById("form3");
+s=t.elements["duur"].value;
+
+var o, u;
+o=document.getElementById("form4");
+u=o.elements["handeling"].value;
 
 
 
-<table border="1" style="width:60%">
-  <tr>
-    <td>Ingredient 1: </td>
-    <td><input type="tekst" name="name" id="i1"></td> </td>
-  </tr>
-  <tr>
-    <td>Ingredient 2: </td>
-    <td> <input type="tekst" name="name" id="i2"></td>
-  </tr>
-  <tr>
-    <td>Gebruik: </td>
-    <td><input type="tekst" name="name" id="gebruik"></td> </td>
-  </tr>
-   <tr>
-    <td>Duur: </td>
-    <td><input type="tekst" name="name" id="duur"></td> </td>
-  </tr
-  
-<button>Submit</button>
-</table>
+document.getElementById("demo").innerHTML="Je "+u+" "+y+"  en "+w+" voor "+s+" minuten<br>";
 
+}
+
+</script>
+
+
+<p id="demo"></p>
 </body>
-
-
 </html>
-
-
